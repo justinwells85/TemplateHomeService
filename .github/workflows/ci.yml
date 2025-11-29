@@ -77,8 +77,10 @@ jobs:
           cache: maven
 
       - name: Run OWASP Dependency Check
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
         run: |
-          mvn org.owasp:dependency-check-maven:check || true
+          mvn org.owasp:dependency-check-maven:check -DnvdApiKey=$NVD_API_KEY || true
 
       - name: Upload security report
         if: always()
