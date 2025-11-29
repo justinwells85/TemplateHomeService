@@ -25,7 +25,7 @@
 
         <!-- Dependency versions -->
         <logstash-logback-encoder.version>9.0</logstash-logback-encoder.version>
-        <springdoc-openapi.version>2.6.0</springdoc-openapi.version>
+        <springdoc-openapi.version>3.0.0</springdoc-openapi.version>
         <testcontainers.version>2.0.2</testcontainers.version>
     </properties>
 
