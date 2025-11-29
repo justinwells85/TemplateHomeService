@@ -1,0 +1,13 @@
+apiVersion: v2
+name: template-home-service
+description: A production-ready Spring Boot service Helm chart
+type: application
+version: 0.1.0
+appVersion: "0.0.1"
+keywords:
+  - spring-boot
+  - java
+  - microservice
+maintainers:
+  - name: Platform Team
+    email: platform@example.com
