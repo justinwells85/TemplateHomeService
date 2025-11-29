@@ -60,18 +60,9 @@ management:
   tracing:
     sampling:
       probability: 1.0
-
-# OpenTelemetry configuration
-otel:
-  service:
-    name: ${spring.application.name}
-  exporter:
-    otlp:
+  otlp:
+    tracing:
       endpoint: ${OTEL_EXPORTER_OTLP_ENDPOINT:http://localhost:4317}
-  traces:
-    exporter: otlp
-  metrics:
-    exporter: otlp
 
 # OpenAPI/Swagger configuration
 springdoc:
