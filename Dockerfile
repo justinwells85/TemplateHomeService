@@ -14,7 +14,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests -B
 
 # Stage 2: Extract layers
-FROM eclipse-temurin:21-jre AS extractor
+FROM eclipse-temurin:25-jre AS extractor
 
 WORKDIR /app
 
