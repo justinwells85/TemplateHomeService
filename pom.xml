@@ -24,7 +24,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Dependency versions -->
-        <logstash-logback-encoder.version>7.4</logstash-logback-encoder.version>
+        <logstash-logback-encoder.version>9.0</logstash-logback-encoder.version>
         <springdoc-openapi.version>2.6.0</springdoc-openapi.version>
         <testcontainers.version>2.0.2</testcontainers.version>
     </properties>
