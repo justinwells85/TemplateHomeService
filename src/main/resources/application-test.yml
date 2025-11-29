@@ -12,6 +12,13 @@ spring:
     enabled: true
     clean-disabled: false
 
+management:
+  tracing:
+    enabled: false
+  otlp:
+    tracing:
+      endpoint: http://localhost:4317
+
 logging:
   level:
     root: INFO
