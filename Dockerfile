@@ -1,7 +1,7 @@
 # Multi-stage build for optimized production image
 
 # Stage 1: Build
-FROM maven:3.9.5-eclipse-temurin-21 AS builder
+FROM maven:3.9-eclipse-temurin-11 AS builder
 
 WORKDIR /app
 
