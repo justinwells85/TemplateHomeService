@@ -1,7 +1,7 @@
 # Multi-stage build for optimized production image
 
 # Stage 1: Build
-FROM maven:3.9-eclipse-temurin-11 AS builder
+FROM maven:3.9-eclipse-temurin-21 AS builder
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests -B
 
 # Stage 2: Extract layers
-FROM eclipse-temurin:25-jre AS extractor
+FROM eclipse-temurin:21-jre AS extractor
 
 WORKDIR /app
 
